@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+            background: #eef2f7;
+        }
+
+        .card {
+            background: white;
+            padding: 50px;
+            width: 400px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2d89ef;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background: #1b5fbd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Prediction Result</h2>
+        <h1>{{ prediction }}</h1>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>

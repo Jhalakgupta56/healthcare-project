@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>History</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar px-4">
+    <span class="navbar-brand">🩺 Healthcare</span>
+    <div>
+        <a href="/">Dashboard</a> |
+        <a href="/logout">Logout</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+
+<div class="card p-4">
+
+<h3 class="text-center mb-4">📊 History</h3>
+
+<table class="table table-hover text-center">
+
+<thead>
+<tr>
+<th>Glucose</th>
+<th>Insulin</th>
+<th>BMI</th>
+<th>Age</th>
+<th>Cholesterol</th>
+<th>Result</th>
+<th>Heart</th>
+<th>Neuro</th>
+</tr>
+</thead>
+
+<tbody>
+{% for r in records %}
+<tr>
+<td>{{ r.glucose }}</td>
+<td>{{ r.insulin }}</td>
+<td>{{ r.bmi }}</td>
+<td>{{ r.age }}</td>
+<td>{{ r.cholesterol }}</td>
+
+<td>
+<span class="badge {{ 'bg-danger' if r.result=='Diabetic' else 'bg-success' }}">
+{{ r.result }}
+</span>
+</td>
+
+<td>{{ r.heart_risk }}</td>
+<td>{{ r.neuro_risk }}</td>
+</tr>
+{% endfor %}
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

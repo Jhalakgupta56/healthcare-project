@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333 !important;
+}
+
+/* Cards */
+.card {
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+.btn-main {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-main:hover {
+    opacity: 0.9;
+}
+
+/* Result Box */
+.result-box {
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.diabetic {
+    background: #ffe5e5;
+    color: #d63031;
+}
+
+.normal {
+    background: #eafaf1;
+    color: #27ae60;
+}
+
+/* Risk badges */
+.badge-risk {
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.low { background: #d4edda; color: #155724; }
+.medium { background: #fff3cd; color: #856404; }
+.high { background: #f8d7da; color: #721c24; }
